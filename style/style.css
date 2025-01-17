@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shard style */
+.bg-color{
+    color: #AAAAAA;
+}
+.poppins{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.display-flex{
+    display: flex;
+}
+
+.dark-1{
+    color: #3A3A3A;
+}
+
+/* navbar design */
+
+header{
+    width: 100%;
+}
+.navbar{
+    justify-content: space-between;
+    margin: 87px 120px 70px 120px;
+}
+.nav-item{
+    list-style: none;
+    gap: 20px;
+}
+.nav-list, i{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 34px;
+
+}
+.nav-link{
+    text-decoration: none;
+}
+
+/* banner section design */
+.brand{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.header-content{
+    margin: 145px 133px 170px 120px ;
+}
+.header-title{
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 4.3rem;
+    margin-bottom: 16px;
+}
+.header-description{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 16px 10px 24px;
+
+}
+.header-img{
+    background: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    margin-right: 165px;
+    /* width: 100%; */
+}
+
+/* sponsor section */
+.sponsor{
+    max-width: 1110 px;
+    display: grid;
+    margin-bottom: 100px;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0 auto;
+    
+}
+.sponsor-img img{
+    margin-left: 60px;
+}
+
+/* header responsive design for mobile*/
+@media screen and (max-width: 576px){
+    .navbar,
+    .banner-content{
+        flex-direction: column-reverse;
+
+    }
+    .nav-item{
+        display: none;
+    }
+    .navbar{
+        margin: 20px auto;
+        align-items: center;
+    }
+    .header-content{
+        margin: 15px;
+    }
+    .header-title{
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 50px;
+        text-align: center;
+
+    }
+    .header-description{
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        width: 321px;
+        margin: 0 auto;
+    }
+    br{
+        display: none;
+    }
+    .btn{
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+    
+    .brand{
+        justify-items: center;
+        font-size: 16px;
+        font-weight: 800;
+
+    }
+    .banner-content{
+        margin-bottom: 40px;
+    }
+    .sponsor-img{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sponsor{
+        
+        margin-bottom: 40px;
+    }
+    .sponsor-img img{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+} 
+
+/* responsive design for tab */
